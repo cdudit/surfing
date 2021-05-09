@@ -13,6 +13,11 @@
 		154DF4562648496B00BEE0C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154DF4542648496B00BEE0C6 /* Main.storyboard */; };
 		154DF4582648497500BEE0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154DF4572648497500BEE0C6 /* Assets.xcassets */; };
 		154DF45B2648497500BEE0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154DF4592648497500BEE0C6 /* LaunchScreen.storyboard */; };
+		154DF464264849CC00BEE0C6 /* surfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF463264849CC00BEE0C6 /* surfer.swift */; };
+		154DF466264849F100BEE0C6 /* spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF465264849F100BEE0C6 /* spot.swift */; };
+		154DF46D26484CF600BEE0C6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF46C26484CF600BEE0C6 /* ContactViewController.swift */; };
+		154DF47126484DF900BEE0C6 /* datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF47026484DF900BEE0C6 /* datas.swift */; };
+		154DF4732648502A00BEE0C6 /* SurfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF4722648502A00BEE0C6 /* SurfersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		154DF4572648497500BEE0C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154DF45A2648497500BEE0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154DF45C2648497500BEE0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154DF463264849CC00BEE0C6 /* surfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surfer.swift; sourceTree = "<group>"; };
+		154DF465264849F100BEE0C6 /* spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spot.swift; sourceTree = "<group>"; };
+		154DF46C26484CF600BEE0C6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		154DF47026484DF900BEE0C6 /* datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datas.swift; sourceTree = "<group>"; };
+		154DF4722648502A00BEE0C6 /* SurfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		154DF44D2648496B00BEE0C6 /* Surfing */ = {
 			isa = PBXGroup;
 			children = (
+				154DF46B26484CD700BEE0C6 /* controllers */,
+				154DF462264849B600BEE0C6 /* structs */,
 				154DF44E2648496B00BEE0C6 /* AppDelegate.swift */,
-				154DF4502648496B00BEE0C6 /* SceneDelegate.swift */,
-				154DF4522648496B00BEE0C6 /* ViewController.swift */,
 				154DF4542648496B00BEE0C6 /* Main.storyboard */,
+				154DF4502648496B00BEE0C6 /* SceneDelegate.swift */,
 				154DF4572648497500BEE0C6 /* Assets.xcassets */,
 				154DF4592648497500BEE0C6 /* LaunchScreen.storyboard */,
 				154DF45C2648497500BEE0C6 /* Info.plist */,
+				154DF47026484DF900BEE0C6 /* datas.swift */,
 			);
 			path = Surfing;
+			sourceTree = "<group>";
+		};
+		154DF462264849B600BEE0C6 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				154DF463264849CC00BEE0C6 /* surfer.swift */,
+				154DF465264849F100BEE0C6 /* spot.swift */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
+		154DF46B26484CD700BEE0C6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				154DF4522648496B00BEE0C6 /* ViewController.swift */,
+				154DF46C26484CF600BEE0C6 /* ContactViewController.swift */,
+				154DF4722648502A00BEE0C6 /* SurfersViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				154DF4532648496B00BEE0C6 /* ViewController.swift in Sources */,
+				154DF46D26484CF600BEE0C6 /* ContactViewController.swift in Sources */,
 				154DF44F2648496B00BEE0C6 /* AppDelegate.swift in Sources */,
+				154DF464264849CC00BEE0C6 /* surfer.swift in Sources */,
+				154DF47126484DF900BEE0C6 /* datas.swift in Sources */,
 				154DF4512648496B00BEE0C6 /* SceneDelegate.swift in Sources */,
+				154DF466264849F100BEE0C6 /* spot.swift in Sources */,
+				154DF4732648502A00BEE0C6 /* SurfersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,9 @@ class SurfersViewController: UIViewController {
         
         rounded()
         setSurfer(surfer: surfers[index])
+        image.isUserInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        image.addGestureRecognizer(tapGestureRecognizer)
     }
     
     func rounded() {
@@ -37,8 +40,23 @@ class SurfersViewController: UIViewController {
     
     func setSurfer(surfer: Surfer) {
         textName.text = "\(surfer.name) \(surfer.surname)"
-        image.image = UIImage(named: surfer.bg)
+        image.image = UIImage(named: surfer.profile)
         classement.text = String(index + 1)
+    }
+    
+    @objc func imageTapped() {
+        performSegue(withIdentifier: "goToProfile", sender: surfers[index])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToProfile" {
+            if let profil = segue.destination as? ProfilViewController {
+                profil.sender = sender as? Surfer
+            }
+        }
+        
     }
     
     @IBAction func previous(_ sender: Any) {
@@ -56,5 +74,4 @@ class SurfersViewController: UIViewController {
         }
         setSurfer(surfer: surfers[index])
     }
-    
 }

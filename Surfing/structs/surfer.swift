@@ -13,7 +13,7 @@ struct Surfer {
     var surname: String
      
     var profile: String {
-        return name + "-profile"
+        return name.lowercased() + "-profile"
     }
      
     var bg: String {

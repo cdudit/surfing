@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152F5F1626486E0E0094BBEC /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F5F1526486E0E0094BBEC /* ProfilViewController.swift */; };
 		154DF44F2648496B00BEE0C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF44E2648496B00BEE0C6 /* AppDelegate.swift */; };
 		154DF4512648496B00BEE0C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF4502648496B00BEE0C6 /* SceneDelegate.swift */; };
 		154DF4532648496B00BEE0C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DF4522648496B00BEE0C6 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152F5F1526486E0E0094BBEC /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		154DF44B2648496B00BEE0C6 /* Surfing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surfing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		154DF44E2648496B00BEE0C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		154DF4502648496B00BEE0C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				154DF4522648496B00BEE0C6 /* ViewController.swift */,
 				154DF46C26484CF600BEE0C6 /* ContactViewController.swift */,
 				154DF4722648502A00BEE0C6 /* SurfersViewController.swift */,
+				152F5F1526486E0E0094BBEC /* ProfilViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				154DF4532648496B00BEE0C6 /* ViewController.swift in Sources */,
 				154DF46D26484CF600BEE0C6 /* ContactViewController.swift in Sources */,
 				154DF44F2648496B00BEE0C6 /* AppDelegate.swift in Sources */,
+				152F5F1626486E0E0094BBEC /* ProfilViewController.swift in Sources */,
 				154DF464264849CC00BEE0C6 /* surfer.swift in Sources */,
 				154DF47126484DF900BEE0C6 /* datas.swift in Sources */,
 				154DF4512648496B00BEE0C6 /* SceneDelegate.swift in Sources */,

@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,11 +108,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UcH-cL-OBX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-3C-rvE">
-                                <rect key="frame" x="20" y="735" width="374" height="48"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-3C-rvE">
+                                <rect key="frame" x="1" y="713" width="413" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-41-RoY">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="100"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
                                         </state>
@@ -120,13 +122,14 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYe-EF-03B">
-                                        <rect key="frame" x="132.5" y="0.0" width="109" height="48"/>
+                                        <rect key="frame" x="73" y="0.0" width="283" height="100"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-6Z-ItI">
-                                        <rect key="frame" x="349" y="0.0" width="25" height="48"/>
+                                        <rect key="frame" x="364" y="0.0" width="49" height="100"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <imageReference key="image" image="chevron.right.circle.fill" catalog="system" symbolScale="large"/>
                                         </state>
@@ -135,6 +138,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="vsg-hr-xCQ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W4i-Ve-M1j"/>
@@ -142,10 +148,10 @@
                         <constraints>
                             <constraint firstItem="UcH-cL-OBX" firstAttribute="bottom" secondItem="W4i-Ve-M1j" secondAttribute="bottom" id="26M-wB-1YT"/>
                             <constraint firstItem="UcH-cL-OBX" firstAttribute="trailing" secondItem="W4i-Ve-M1j" secondAttribute="trailing" id="3cb-Cv-Ht8"/>
-                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="trailing" secondItem="kHr-3C-rvE" secondAttribute="trailing" constant="20" id="5ch-uP-WG9"/>
-                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="bottom" secondItem="kHr-3C-rvE" secondAttribute="bottom" constant="30" id="XYS-lR-bNi"/>
+                            <constraint firstItem="kHr-3C-rvE" firstAttribute="leading" secondItem="W4i-Ve-M1j" secondAttribute="leading" constant="1" id="Fqv-K7-ZDL"/>
                             <constraint firstItem="UcH-cL-OBX" firstAttribute="leading" secondItem="W4i-Ve-M1j" secondAttribute="leading" id="Zhx-wq-NFY"/>
-                            <constraint firstItem="kHr-3C-rvE" firstAttribute="leading" secondItem="W4i-Ve-M1j" secondAttribute="leading" constant="20" id="ayw-Sa-rgL"/>
+                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="trailing" secondItem="kHr-3C-rvE" secondAttribute="trailing" id="hP7-aE-efG"/>
+                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="bottom" secondItem="kHr-3C-rvE" secondAttribute="bottom" id="nlJ-pp-J13"/>
                             <constraint firstItem="UcH-cL-OBX" firstAttribute="top" secondItem="ifS-aV-Gdk" secondAttribute="top" id="we2-BL-wG5"/>
                         </constraints>
                     </view>
@@ -153,6 +159,7 @@
                     <connections>
                         <outlet property="image" destination="UcH-cL-OBX" id="RnG-Si-3oo"/>
                         <outlet property="name" destination="XYe-EF-03B" id="nVb-pP-1OJ"/>
+                        <outlet property="stack" destination="kHr-3C-rvE" id="RA4-0m-DYn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdk-U3-hVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

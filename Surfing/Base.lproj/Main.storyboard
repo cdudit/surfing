@@ -94,7 +94,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrk-cP-EaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598.55072463768124" y="198.88392857142856"/>
+            <point key="canvasLocation" x="638" y="-145"/>
+        </scene>
+        <!--Spots-->
+        <scene sceneID="hrj-9z-Zdf">
+            <objects>
+                <viewController id="na3-Em-Z9H" customClass="SpotsViewController" customModule="Surfing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifS-aV-Gdk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UcH-cL-OBX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-3C-rvE">
+                                <rect key="frame" x="20" y="735" width="374" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-41-RoY">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="48"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previous:" destination="na3-Em-Z9H" eventType="touchUpInside" id="ZBb-Vx-1Fr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYe-EF-03B">
+                                        <rect key="frame" x="132.5" y="0.0" width="109" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-6Z-ItI">
+                                        <rect key="frame" x="349" y="0.0" width="25" height="48"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="chevron.right.circle.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="next:" destination="na3-Em-Z9H" eventType="touchUpInside" id="WMn-JV-kZc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W4i-Ve-M1j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UcH-cL-OBX" firstAttribute="bottom" secondItem="W4i-Ve-M1j" secondAttribute="bottom" id="26M-wB-1YT"/>
+                            <constraint firstItem="UcH-cL-OBX" firstAttribute="trailing" secondItem="W4i-Ve-M1j" secondAttribute="trailing" id="3cb-Cv-Ht8"/>
+                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="trailing" secondItem="kHr-3C-rvE" secondAttribute="trailing" constant="20" id="5ch-uP-WG9"/>
+                            <constraint firstItem="W4i-Ve-M1j" firstAttribute="bottom" secondItem="kHr-3C-rvE" secondAttribute="bottom" constant="30" id="XYS-lR-bNi"/>
+                            <constraint firstItem="UcH-cL-OBX" firstAttribute="leading" secondItem="W4i-Ve-M1j" secondAttribute="leading" id="Zhx-wq-NFY"/>
+                            <constraint firstItem="kHr-3C-rvE" firstAttribute="leading" secondItem="W4i-Ve-M1j" secondAttribute="leading" constant="20" id="ayw-Sa-rgL"/>
+                            <constraint firstItem="UcH-cL-OBX" firstAttribute="top" secondItem="ifS-aV-Gdk" secondAttribute="top" id="we2-BL-wG5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Spots" image="sun.haze" catalog="system" id="oOZ-MK-Feg"/>
+                    <connections>
+                        <outlet property="image" destination="UcH-cL-OBX" id="RnG-Si-3oo"/>
+                        <outlet property="name" destination="XYe-EF-03B" id="nVb-pP-1OJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdk-U3-hVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.68115942028987" y="520.98214285714289"/>
         </scene>
         <!--Profil View Controller-->
         <scene sceneID="fql-jq-Y2R">
@@ -158,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vac-UO-uZ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="199.55357142857142"/>
+            <point key="canvasLocation" x="1445" y="-145"/>
         </scene>
         <!--Home-->
         <scene sceneID="2Ye-yR-XOS">
@@ -213,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eF-ZS-AT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598.55072463768124" y="-448.66071428571428"/>
+            <point key="canvasLocation" x="638" y="-801"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="l1H-wB-FoL">
@@ -259,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYG-sh-2nk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1467" y="-449"/>
+            <point key="canvasLocation" x="1445" y="-802"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o4V-GI-Gbg">
@@ -273,6 +336,7 @@
                     <connections>
                         <segue destination="DcF-iT-jdT" kind="relationship" relationship="viewControllers" id="iFl-3c-dvw"/>
                         <segue destination="Bhy-63-aGH" kind="relationship" relationship="viewControllers" id="6EQ-8R-lge"/>
+                        <segue destination="na3-Em-Z9H" kind="relationship" relationship="viewControllers" id="Omd-fW-HS5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhN-QQ-UO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -282,10 +346,13 @@
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="chevron.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="home" width="1920" height="2879"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="sun.haze" catalog="system" width="128" height="119"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

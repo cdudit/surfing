@@ -18,11 +18,13 @@ func surfers() -> [Surfer] {
     ]
 }
  
-var spots: [Spot] = [
-    Spot(name: "Bells Beach", country: "Australie"),
-    Spot(name: "Hossegor", country: "France"),
-    Spot(name: "Mentawai", country: "Indonésie"),
-    Spot(name: "Pipeline", country: "Hawaiï"),
-    Spot(name: "Teahupoo", country: "Polynésie"),
-    Spot(name: "Tenerife", country: "Espagne")
-]
+func spots() -> [Spot] {
+    return [
+        Spot(name: "Bells Beach", country: "Australie"),
+        Spot(name: "Hossegor", country: "France"),
+        Spot(name: "Mentawai", country: "Indonésie"),
+        Spot(name: "Pipeline", country: "Hawaï"),
+        Spot(name: "Teahupoo", country: "Polynésie"),
+        Spot(name: "Tenerife", country: "Espagne")
+    ]
+}
